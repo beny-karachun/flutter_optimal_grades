@@ -1,0 +1,10 @@
+^C:\USERS\BENY1\FLUTTEROPTIMALGRADES\FLUTTER_OPTIMAL_GRADES\BUILD\WINDOWS\X64\CMAKEFILES\BD829FD852B8C9A4E32680A4A6B9B6F7\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/beny1/FlutterOptimalGrades/flutter_optimal_grades/windows -BC:/Users/beny1/FlutterOptimalGrades/flutter_optimal_grades/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/beny1/FlutterOptimalGrades/flutter_optimal_grades/build/windows/x64/flutter_optimal_grades.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

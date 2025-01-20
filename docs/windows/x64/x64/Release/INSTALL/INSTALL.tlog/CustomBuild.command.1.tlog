@@ -1,0 +1,10 @@
+^C:\USERS\BENY1\FLUTTEROPTIMALGRADES\FLUTTER_OPTIMAL_GRADES\BUILD\WINDOWS\X64\CMAKEFILES\BD829FD852B8C9A4E32680A4A6B9B6F7\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

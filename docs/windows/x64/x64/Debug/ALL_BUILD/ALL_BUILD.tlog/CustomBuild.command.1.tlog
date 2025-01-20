@@ -1,0 +1,10 @@
+^C:\USERS\BENY1\FLUTTEROPTIMALGRADES\FLUTTER_OPTIMAL_GRADES\WINDOWS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/beny1/FlutterOptimalGrades/flutter_optimal_grades/windows -BC:/Users/beny1/FlutterOptimalGrades/flutter_optimal_grades/build/windows/x64 --check-stamp-file C:/Users/beny1/FlutterOptimalGrades/flutter_optimal_grades/build/windows/x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
